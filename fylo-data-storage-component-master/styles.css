@@ -1,0 +1,260 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.5;
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+main{
+    position: relative;
+}
+.bottom-image{
+    background-image: url('images/bg-desktop.png');
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;   
+    position: relative;
+}
+.fylo-card, .progress-card {
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    padding-block-end: 20px;
+    padding-block-start: 20px;
+    padding-inline-start: 30px;
+}
+.fylo-card{
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 130px;
+    gap: 10px;
+    padding-block-end: 30px;
+    margin-inline-start: 30px;
+}
+.icon{
+    background: hsl(229, 57%, 11%);
+    width: 25px;
+    height: 35px;
+    border-radius: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 30px;
+    padding-block-start: 6px;
+    padding-block-end: 10px;
+}
+.progress-card{
+    background-color: hsl(228, 56%, 26%);
+    width: 400px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-block-end: 40px;
+}
+.data{
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.data-bar{
+    height: 10px;
+    border-radius: 5px;
+    width: 81.5%;
+    position: relative;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.data-bar span{
+    height: 10px;
+    border-radius: 50%;
+    width: 10px;
+    float: right;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding-block-start: 20px;
+    padding-block-end: 10px;
+}
+.text-bold{
+    font-weight: 700;
+}
+.tag-left,
+.tag-right {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+}
+.tag-left {
+  left: 0;
+}
+.tag-right {
+  right: 0;
+}
+.speech-bubble{
+    position: relative;
+    z-index: 1;
+}
+.box{
+    font-size: 25px;
+    font-weight: 700;
+    float: right;
+    position: relative;
+    margin: -20px;
+    color: #000;
+    padding-inline: 12px;
+    margin-inline-end: 5px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box::after{
+    content:"";
+    position:absolute;
+    bottom: -20px;
+    right: 0;
+    border-width:20px 0 0 20px;
+    border-style:solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+.box span{
+    font-size: 12px;
+    color: grey;
+    font-weight: 400;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: 100vh;
+        height: 100svh;
+    }
+    .bottom-image{
+        background-image: url('images/bg-mobile.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; 
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
+    .logo{
+        padding-block: 30px;
+    }
+    .fylo-card{
+        height: 30%;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: 130px;
+        padding-block-end: 20px;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        padding-inline-start: 10px;
+        padding-inline-end: 30px;
+        padding-block-start: 10px;
+        padding-block-end: 10px;
+    }
+    .progress-card{
+        width: 300px;
+        position: relative;
+        height: 22%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .data{
+        background-color: hsl(229, 57%, 11%);
+        width: 100%;
+        height: 15px;
+    }
+    .data-bar{
+        height: 15px;
+        border-radius: 10px;
+        width: 81.5%;
+    }
+    .data-bar span{
+        height: 15px;
+        width: 15px;
+    }
+    .text{
+        padding-block-end: 20px;
+    }
+    .speech-bubble{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+    .box{
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -100px;
+        width: 50%;
+        padding-block: 10px; 
+    } 
+    .box::after{
+        display: none;
+    }
+}
