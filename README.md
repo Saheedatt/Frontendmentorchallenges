@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/Saheedatt/Frontendmentorchallenges/tree/main/fylo-data-storage-component-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://jovial-ganache-fa9d5f.netlify.app/)
 
 ## My process
 
@@ -46,10 +46,6 @@ Users should be able to:
 I learnt about the use of flexbox and also tried to understand the use of selectors properly. Also tried to use 
 the modern css styling
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 .fylo-card{
     background-color: hsl(228, 56%, 26%);
